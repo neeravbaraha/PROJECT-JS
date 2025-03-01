@@ -8,19 +8,19 @@ function generateHTML(key,code,keycode){
 
 return `
 <div class="key-container">
-<h4>Key/Code/KeyCode</h4>
+<h4>key</h4>
 <div class="keycontent">${key===" "? "Space": key}
 </div>
 </div>
 
 <div class="key-container">
-<h4>Key/Code/KeyCode</h4>
+<h4>Code</h4>
 <div class="keycontent">${code}
 </div>
 </div>
 
 <div class="key-container">
-<h4>Key/Code/KeyCode</h4>
+<h4>KeyCode</h4>
 <div class="keycontent">${keycode}
 </div>
 </div>
