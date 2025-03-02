@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(165, 187, 122);
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.drop {
+    position: absolute;
+    background-color: #00fffb;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 5%;
+    border: 4px solid rgba(128, 62, 62, 0.6);
+    animation: animate 5s linear;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    25% {
+        border-radius: 15%;
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(2);
+        border-radius: 25%;
+        background-color: rgb(126, 18, 18);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(3);
+        border-radius: 50%;
+        background-color: green;
+    }
+}
