@@ -4,17 +4,251 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>RESUME</title>
+    <title>Nirab Baraha - Portfolio</title>
 </head>
 <body>
-    <header class="head">
-        <h1 class="name">Nirab Baraha</h1>
-        <div class="contact">
-            <h3>Phone number: 9821439813</h3>
-            <h3>Email: neeravbaraha07@gmail.com</h3>
+    <!-- Navigation -->
+    <div class="nav-container">
+        <nav>
+            <a href="#home" class="logo">NB</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!-- Header/Hero -->
+    <header id="home">
+        <div class="particles" id="particles-js"></div>
+        <div class="hero-content">
+            <h1 class="hero-name">Nirab Baraha</h1>
+            <h2 class="hero-title">BCA Student & BSc Physics Enthusiast</h2>
+            <p class="hero-description">Blending computer science and physics to solve complex problems. Currently pursuing dual degrees at Manipal University Jaipur.</p>
+            <a href="#contact" class="btn">Get In Touch</a>
         </div>
     </header>
-
+    
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-container">
+            <div class="about-image fade-in">
+                <div class="about-img-placeholder">
+                    <img src="port.png" alt="">
+                </div>
+            </div>
+            <div class="about-content">
+                <p class="about-text fade-in">
+                    Hello! I'm Nirab Baraha, a passionate student pursuing a Bachelor of Computer Applications (BCA) and Bachelor of Science in Physics at Manipal University Jaipur. My unique educational path has given me a distinct perspective on problem-solving, combining computational thinking with an understanding of physical principles.
+                </p>
+                <p class="about-text fade-in">
+                    I am fascinated by the intersection of computing and physics, exploring areas like computational physics, data science, and quantum computing. My dual education equips me with both theoretical knowledge and practical skills to approach complex technical challenges.
+                </p>
+                <p class="about-text fade-in">
+                    When I'm not studying, you'll find me working on personal coding projects, participating in hackathons, or exploring the latest advancements in physics. I believe in continuous learning and pushing boundaries through interdisciplinary approaches.
+                </p>
+                <a href="#contact" class="btn fade-in">Connect With Me</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Education Section -->
+     <!--Change BSC physics to TriChandra and BCA to manipal-->
+    <section id="education" class="section">
+        <h2 class="section-title fade-in">Education</h2>
+        <div class="education-container">
+            <div class="education-card fade-in">
+                <span class="education-year">2021 - Present</span>
+                <h3 class="education-degree">Bachelor of Computer Applications (BCA)</h3>
+                <p class="education-school">Manipal University Jaipur</p>
+                <p>Focusing on software development, programming languages, database management, and web technologies. Developing strong foundations in computer science principles and practical application development.</p>
+            </div>
+            <div class="education-card fade-in">
+                <span class="education-year">2021 - Present</span>
+                <h3 class="education-degree">Bachelor of Science in Physics</h3>
+                <p class="education-school">Manipal University Jaipur</p>
+                <p>Studying classical mechanics, electromagnetism, quantum mechanics, thermodynamics, and modern physics. Developing analytical skills and understanding of fundamental physical principles.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+     <!--Change to be done here-->
+    <section id="skills" class="section">
+        <h2 class="section-title fade-in">Skills</h2>
+        <div class="skills-container">
+            <div class="skill-category fade-in">
+                <h3 class="skill-title">Programming</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Java</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="90"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>C/C++</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <h3 class="skill-title">Web Development</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML5/CSS3</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>React.js</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Node.js</span>
+                            <span>65%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="65"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Database Management</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="skill-category fade-in">
+                <h3 class="skill-title">Physics & Math</h3>
+                <ul class="skill-list">
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Computational Physics</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="80"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Mathematical Modeling</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="75"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Data Analysis</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="85"></div>
+                        </div>
+                    </li>
+                    <li class="skill-item">
+                        <div class="skill-name">
+                            <span>Scientific Computing</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" data-width="70"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+     <!--Remainder to add the whole action afterward-->
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Contact Me</h2>
+        <form class="contact-form fade-in">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-icon">
+                <i>in</i>
+            </a>
+            <a href="#" class="social-icon">
+                <i>gh</i>
+            </a>
+            <a href="#" class="social-icon">
+                <i>tw</i>
+            </a>
+            <a href="#" class="social-icon">
+                <i>em</i>
+            </a>
+        </div>
+        <p class="copyright">© 2025 Nirab Baraha. All Rights Reserved.</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
