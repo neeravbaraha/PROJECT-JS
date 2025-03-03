@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JavaScript Basics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f0f2f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #1a73e8;
+            margin-bottom: 15px;
+        }
+
+        .code-editor {
+            background: #1e1e1e;
+            color: #fff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 100px;
+            background: #2d2d2d;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+
+        button:hover {
+            background: #1557b0;
+        }
+
+        .output {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        .example {
+            background: #e8f0fe;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript Basics Tutorial</h1>
+
+        <div class="section">
+            <h2>1. Variables and Data Types</h2>
+            <p>JavaScript has several data types: strings, numbers, booleans, objects, and more.</p>
+            <div class="example">
+                <code>
+                    let name = "John"; // String<br>
+                    let age = 25; // Number<br>
+                    let isStudent = true; // Boolean
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Practice Problem: Variable Operations</h2>
+            <p>Write a program that calculates the area of a rectangle using variables.</p>
+            <div class="code-editor">
+                <textarea id="problem1" placeholder="Write your code here...">// Define length and width
+// Calculate area
+// Print the result</textarea>
+                <button onclick="runCode('problem1')">Run Code</button>
+                <div id="output1" class="output"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Functions</h2>
+            <p>Functions are reusable blocks of code that perform specific tasks.</p>
+            <div class="example">
+                <code>
+                    function greet(name) {<br>
+                    &nbsp;&nbsp;return "Hello, " + name;<br>
+                    }
+                </code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Practice Problem: Function Creation</h2>
+            <p>Create a function that converts Celsius to Fahrenheit.</p>
+            <div class="code-editor">
+                <textarea id="problem2" placeholder="Write your code here...">// Create a function celsiusToFahrenheit
+// Formula: (C × 9/5) + 32</textarea>
+                <button onclick="runCode('problem2')">Run Code</button>
+                <div id="output2" class="output"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function runCode(problemId) {
+            const code = document.getElementById(problemId).value;
+            const outputId = problemId.replace('problem', 'output');
+            try {
+                const result = eval(code);
+                document.getElementById(outputId).innerHTML = "Output: " + result;
+            } catch (error) {
+                document.getElementById(outputId).innerHTML = "Error: " + error.message;
+            }
+        }
+
+        // Example solutions
+        const solution1 = `
+            let length = 10;
+            let width = 5;
+            let area = length * width;
+            area; // Returns 50
+        `;
+
+        const solution2 = `
+            function celsiusToFahrenheit(celsius) {
+                return (celsius * 9/5) + 32;
+            }
+            celsiusToFahrenheit(20); // Returns 68
+        `;
+    </script>
+</body>
+</html>
